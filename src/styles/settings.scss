@@ -1,0 +1,26 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+.custom-date-input {
+    flex: none;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #939191;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  
+    &:focus {
+      border-color: #1867c0; /* Color primario de Vuetify */
+      box-shadow: 0 0 0 2px rgba(24, 103, 192, 0.2); /* Sombra de enfoque */
+      outline: none;
+    }
+  }
+  
